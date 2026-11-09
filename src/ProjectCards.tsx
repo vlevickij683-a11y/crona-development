@@ -12,14 +12,14 @@ export default function ProjectCards({lang}:{lang:Lang}){
   key:'atelier',title:'Crona Atelier',status:ru?'Готовый проект':'Completed project',
   description:ru?'Готовый сайт в портфолио Crona. Открой проект, чтобы посмотреть результат.':'A completed website in the Crona portfolio. Open the project to explore the result.',
   tags:ru?['Веб-сайт','Завершён']:['Website','Completed'],
-  link:'https://crona-atelier.silestisl.chatgpt.site/',action:ru?'Посмотреть сайт':'View website',
-  note:ru?'Для просмотра может потребоваться вход в ChatGPT.':'Viewing may require signing in to ChatGPT.'
+  link:'https://vlevickij683-a11y.github.io/crona-atelier/',action:ru?'Посмотреть сайт':'View website',
+  note:ru?'Открытый демонстрационный проект.':'A publicly available demo project.'
  },{
   key:'playground',title:'Crona Playground',status:ru?'В разработке':'In development',
   description:ru?'Примерь свой будущий сайт: здесь можно будет менять расположение баннеров и кнопок, подбирать фон и анимации на основе React Bits. Для клиентов и всех, кому интересно попробовать дизайн.':'Try out your next website: rearrange banners and buttons, choose backgrounds and explore animations powered by React Bits. For clients and anyone curious about design.',
   tags:ru?['Конструктор','Фоны и анимации']:['Website builder','Backgrounds & motion'],
-  link:'https://crona-playground.silestisl.chatgpt.site/',action:ru?'Открыть Playground':'Open Playground',
-  note:ru?'Пока не готов к публичному запуску. Доступ ограничен — может потребоваться вход или разрешение.':'Not ready for public launch yet. Access is restricted — sign-in or permission may be required.'
+  link:'https://vlevickij683-a11y.github.io/crona-playground/',action:ru?'Открыть Playground':'Open Playground',
+  note:ru?'Экспериментальный проект в разработке.':'An experimental project still in development.'
  }];
  return <section className="project-gallery" aria-labelledby="projects-heading"><div className="section-label" id="projects-heading">{ru?'ПРОЕКТЫ / CRONA':'PROJECTS / CRONA'}</div><div className="project-tiles">{projects.map((p,i)=><ReflectiveCard key={p.key} width="100%" height="100%" radius={32} theme="dark" blurStrength={0} roughness={0.1} grayscale={0} warp={0} tiltStrength={17} bevel={3.5} warpScale={1.7} webcam={false} enableTilt={fine&&!reduce} intro={!reduce} tint="#b78cea" className={`project-reflection project-${p.key}`}>
   <article className="project-tile" aria-labelledby={`${p.key}-heading`}>
